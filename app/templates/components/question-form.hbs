@@ -1,8 +1,8 @@
 <h2>{{@title}}</h2>
 
 <ul>
-    {{#each @questions as |question|}}
-      <li>{{question}}</li>
-      <button {{action "selectAnswer" question}}></button>
-    {{/each}}
+  {{#each @options as |option|}}
+    <li>{{option}}</li>
+    <button {{action "selectOption" option}}></button>
+  {{/each}}
 </ul>

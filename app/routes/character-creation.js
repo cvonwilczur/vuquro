@@ -1,9 +1,18 @@
 import Route from '@ember/routing/route';
 
+const DUMMY_DATA = {
+    'kind_selection': {
+        'question' : 'Our story begins . . .',
+        'answers' : ['You were born Human, raised among the impossible towers of Nexus.',
+                    'You were created Shaped, perfect in every way in the Tower of Conn\'Ing.',
+                    'You flickered back to life a Clanker, creaking through the dusty deritus of a Librarian ruin.'
+                    ]
+    }
+    
+};
+
 export default Route.extend({
     model() {
-        return ['You were born to Elven parents, raised in the woodlands of Elswyr.',
-                'You were a bully in your childhood, physically dominating the other children.',
-                'During your youth, you were apprenticed to a blacksmith.']
+        return DUMMY_DATA;
     }
 });

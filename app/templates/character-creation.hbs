@@ -1,2 +1,2 @@
-<QuestionForm @title="Our Story Begins..." @questions={{this.model}} />
+<QuestionForm @title={{this.model.kind_selection.question}} @options={{this.model.kind_selection.answers}} />
 {{outlet}}
